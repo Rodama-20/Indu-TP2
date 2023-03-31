@@ -1,5 +1,9 @@
 FROM python:3.9
 
+RUN addgroup -S nonroot && adduser --group nonroot myuser
+
+USER myuser
+
 WORKDIR /code
 
 COPY ./setup.py /code/setup.py
@@ -14,8 +18,6 @@ RUN pip install /code
 
 COPY ./controller /code/controller
 
-RUN addgroup -S nonroot && adduser -S nonroot  -G myuser
 
-USER myuser
 
 CMD ["uvicorn", "controller.controller:app", "--host", "0.0.0.0", "--port", "80"]
