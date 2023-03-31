@@ -13,3 +13,12 @@ le run execute une série de commandes
 le with utilise une autre action pour réaliser l'étape
 ### La première étape contient le mot-clé ‘with’, a quoi sert-il ?
 il permet d'utiliser une autre action pour réaliser l'étape de checkout
+
+## 2a
+### Sur l’onglet Summary d’une analyse de code, SonarCloud fournit 4 indicateurs. Quels sont-ils et quelles sont leurs utilités ?
+- Bugs: permet de détecter les bugs dans le code
+- Code Smells: permet de détecter les mauvaises pratiques de code
+- Vulnerabilities: permet de détecter les failles de sécurité
+- Security Hotspots: permet de détecter les endroits où il y a des risques de failles de sécurité
+### À quoi sert l’indicateur Quality Gate ?
+a savoir si le nouveau code ajoute des problèmes
