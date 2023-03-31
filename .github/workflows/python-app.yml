@@ -44,8 +44,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Login to registry
-      run : echo ${{ secrets.PERSONNAL_TOKEN }} | docker login -u rodama-20 --password-stdin
+      run : echo ${{ secrets.PERSONNAL_TOKEN }} | docker login -u Rodama-20 --password-stdin
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ghcr.io/rodama-20/tp2s:latest
+      run: docker build . --file Dockerfile --tag ghcr.io/Rodama-20/tp2s:latest
     - name: Push the Docker image
       run: docker push ghcr.io/rodama-20/tp2s:latest
