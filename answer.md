@@ -22,3 +22,12 @@ il permet d'utiliser une autre action pour réaliser l'étape de checkout
 - Security Hotspots: permet de détecter les endroits où il y a des risques de failles de sécurité
 ### À quoi sert l’indicateur Quality Gate ?
 a savoir si le nouveau code ajoute des problèmes
+
+## 2b
+### Quelle est la différence entre les sections New code et Overall Code dans l’onglet Summary ?
+- New code: analyse seulement le nouveau code publié et les problème associés
+- Overall code: analyse l'entièreté du code
+### Y a-t-il des Code Smells ? Si oui, combien et pour quelle(s) raisons(s) ?
+Il y a 3 code smells: 2 pour des paramètres de fonctions non utilisés et 1 pour une fonction dupliquée
+### Y a-t-il des Security Hotspots ? Si oui, combien et pour quelle(s)raison(s) ?
+Il y a 1 security hotspot, dans le docker python fonctionne en root
